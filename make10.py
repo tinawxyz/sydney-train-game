@@ -298,7 +298,11 @@ def uniqueExpressions(numbers):
 
 
     # convert each expression into a list of hashKeys
+<<<<<<< HEAD
     hash_exprs = [] # list of list of sorted hashKeys
+=======
+    hash_exprs = [] # list of tuple of sorted hashKeys
+>>>>>>> 7b96acb061929d2decaaa1fa6f04b50fa59feae2
     hash_map = {} # {hashKey : list of item_expr}, each item_expr=' '.join(item)
 
     for expr in dup_exprs: # each expr is a list of items eval to 10
@@ -321,7 +325,11 @@ def uniqueExpressions(numbers):
     unique_exprs = []
     all_exprs = {}
     
+<<<<<<< HEAD
     for hash_expr in hash_exprs: # each hash_expr is a sorted list of hashKeys, eval to 10
+=======
+    for hash_expr in hash_exprs: # each hash_expr is a sorted tuple of hashKeys, eval to 10
+>>>>>>> 7b96acb061929d2decaaa1fa6f04b50fa59feae2
         first_normal_expr = [hash_map[key][0] for key in hash_expr]
         first_normal_expr = ' '.join(first_normal_expr).replace(' ', '')
         unique_exprs.append(first_normal_expr)
